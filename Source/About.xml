@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>Blake.SecretPassageDoors</packageId>
+  <name>Secret Passage Doors</name>
+  <author>Blake</author>
+  <url>
+  </url>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <description>Adds doors that look like and blend in with walls, for secret passages, maintenance hatches, etc.
+
+Adds a secret passage door for metallic, brick, plank, smoothed rock and rock surfaces and a wall connector for...well... connecting walls.
+	
+Update: updated the wall graphics to the 1.0 walls and added rock and smoothed rock hidden doors.
+Update: updated to 1.1 and changed non material cost from a component to 5 steel.
+
+Also, side note, the wall connector can be used for things other than connecting walls and secret doors, for example, connecting walls to vents and nutrient paste dispensers.
+	</description>
+</ModMetaData>
