@@ -1,14 +1,14 @@
 # SecretPassageDoors
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Blakes mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1713600404
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 Adds doors that look like and blend in with walls, for secret passages, maintenance hatches, etc.
 
@@ -19,7 +19,7 @@ Update: updated to 1.1 and changed non material cost from a component to 5 steel
 
 Also, side note, the wall connector can be used for things other than connecting walls and secret doors, for example, connecting walls to vents and nutrient paste dispensers.
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -29,6 +29,7 @@ Also, side note, the wall connector can be used for things other than connecting
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 
