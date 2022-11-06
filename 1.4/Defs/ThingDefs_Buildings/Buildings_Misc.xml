@@ -23,6 +23,7 @@
     <drawerType>RealtimeOnly</drawerType>
     <building>
       <isInert>true</isInert>
+      <paintable>true</paintable>
       <canPlaceOverWall>true</canPlaceOverWall>
       <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
       <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
@@ -206,6 +207,7 @@
     </graphicData>
     <uiIconPath>Things/Building/Linked/WallLink_MenuIcon</uiIconPath>
     <building>
+      <paintable>true</paintable>
       <ai_chillDestination>false</ai_chillDestination>
       <isInert>true</isInert>
       <isEdifice>false</isEdifice>
