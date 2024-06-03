@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SPD.onlyColonists>Only controlled colonists can use hidden doors</SPD.onlyColonists>
+  <SPD.onlyColonistsTT>Colonists with mental breaks and non-faction pawns can not use the hidden doors.</SPD.onlyColonistsTT>
+  <SPD.modVersion>Installed mod-version: {0}</SPD.modVersion>
+</LanguageData>

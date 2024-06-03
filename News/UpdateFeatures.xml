@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="SecretPassageDoors_UpdateFeatureBase">
+		<modNameReadable>SecretPassageDoors</modNameReadable>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2412682633</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="SecretPassageDoors_UpdateFeatureBase">
+		<defName>SecretPassageDoors_1_5_0</defName>
+		<assemblyVersion>1.5.0</assemblyVersion>
+		<content>There is not a setting to only let player controlled colonists be able to use the doors</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>
+
