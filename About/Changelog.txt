@@ -1,5 +1,8 @@
 # Changelog for SecretPassageDoors
 
+1.5.2 - Typo
+
+
 1.5.1 - Added setting to only let player controlled colonists be able to use the doors
 Used DeepL to update translations for ChineseSimplified, French, German
 

@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<TabulaRasa.UpdateDef Abstract="true" Name="SecretPassageDoors_UpdateInfoBase">
-		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2412682633</linkUrl>
-		<banner>UpdateInfo/SecretPassageDoors</banner>
-	</TabulaRasa.UpdateDef>
-	<TabulaRasa.UpdateDef ParentName="SecretPassageDoors_UpdateInfoBase">
-		<defName>SecretPassageDoors_1_5_0</defName>
-		<date>2024/6/3</date>
-		<content>There is not a setting to only let player controlled colonists be able to use the doors</content>
-	</TabulaRasa.UpdateDef>
+  <TabulaRasa.UpdateDef Abstract="true" Name="SecretPassageDoors_UpdateInfoBase">
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2412682633</linkUrl>
+    <banner>UpdateInfo/SecretPassageDoors</banner>
+  </TabulaRasa.UpdateDef>
+  <TabulaRasa.UpdateDef ParentName="SecretPassageDoors_UpdateInfoBase">
+    <defName>SecretPassageDoors_1_5_0</defName>
+    <date>2024/6/3</date>
+    <content>There is now a setting to only let player controlled colonists be able to use the doors</content>
+  </TabulaRasa.UpdateDef>
 </Defs>
-
