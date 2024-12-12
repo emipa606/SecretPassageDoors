@@ -27,6 +27,8 @@
 Update of Blakes mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1713600404
 
+- There is now a setting to only let player controlled colonists be able to use the doors
+
 [img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
@@ -59,8 +61,8 @@ Also, side note, the wall connector can be used for things other than connecting
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]
+[/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2412682633][img]https://img.shields.io/github/v/release/emipa606/SecretPassageDoors?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.2</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2412682633][img]https://img.shields.io/github/v/release/emipa606/SecretPassageDoors?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: hidden doors</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.3</modVersion>
 </ModMetaData>
