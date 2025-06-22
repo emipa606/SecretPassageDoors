@@ -5,7 +5,7 @@ using Verse;
 namespace SecretPassageDoors;
 
 [HarmonyPatch(typeof(Building_Door), nameof(Building_Door.PawnCanOpen))]
-[HarmonyBefore(["Mlie.PrisonersDontHaveKeys"])]
+[HarmonyBefore("Mlie.PrisonersDontHaveKeys")]
 public class Building_Door_PawnCanOpen
 {
     [HarmonyPostfix]
@@ -16,7 +16,7 @@ public class Building_Door_PawnCanOpen
             return;
         }
 
-        if (!SecretPassageDoorsMod.instance.Settings.OnlyColonists)
+        if (!SecretPassageDoorsMod.Instance.Settings.OnlyColonists)
         {
             return;
         }

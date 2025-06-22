@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: hidden autodoor (bricks) -->
+  <HiddenAutoDoorBricks.label>hidden autodoor (bricks)</HiddenAutoDoorBricks.label>
+  <!-- EN: An autodoor that blends in with brick walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down. -->
+  <HiddenAutoDoorBricks.description>An autodoor that blends in with brick walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</HiddenAutoDoorBricks.description>
+  <!-- EN: hidden autodoor (planks) -->
+  <HiddenAutoDoorPlanks.label>hidden autodoor (planks)</HiddenAutoDoorPlanks.label>
+  <!-- EN: An autodoor that blends in with plank walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down. -->
+  <HiddenAutoDoorPlanks.description>An autodoor that blends in with plank walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</HiddenAutoDoorPlanks.description>
+  <!-- EN: hidden autodoor (rock) -->
+  <HiddenAutoDoorRock.label>hidden autodoor (rock)</HiddenAutoDoorRock.label>
+  <!-- EN: An autodoor that blends in with rock walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down. -->
+  <HiddenAutoDoorRock.description>An autodoor that blends in with rock walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</HiddenAutoDoorRock.description>
+  <!-- EN: hidden autodoor (rock smoothed) -->
+  <HiddenAutoDoorRocksmooth.label>hidden autodoor (rock smoothed)</HiddenAutoDoorRocksmooth.label>
+  <!-- EN: An autodoor that blends in with smoothed rock walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down. -->
+  <HiddenAutoDoorRocksmooth.description>An autodoor that blends in with smoothed rock walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</HiddenAutoDoorRocksmooth.description>
+  <!-- EN: hidden autodoor (metallic) -->
+  <HiddenAutoDoorSmooth.label>hidden autodoor (metallic)</HiddenAutoDoorSmooth.label>
+  <!-- EN: An autodoor that blends in with smooth walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down. -->
+  <HiddenAutoDoorSmooth.description>An autodoor that blends in with smooth walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</HiddenAutoDoorSmooth.description>
+  <!-- EN: hidden door (bricks) -->
+  <HiddenDoorBricks.label>hidden door (bricks)</HiddenDoorBricks.label>
+  <!-- EN: A door that blends in with brick walls. Put a wall link in the same tile to make it link to adjacent walls. -->
+  <HiddenDoorBricks.description>A door that blends in with brick walls. Put a wall link in the same tile to make it link to adjacent walls.</HiddenDoorBricks.description>
+  <!-- EN: hidden door (planks) -->
+  <HiddenDoorPlanks.label>hidden door (planks)</HiddenDoorPlanks.label>
+  <!-- EN: A door that blends in with wooden walls. Put a wall link in the same tile to make it link to adjacent walls. -->
+  <HiddenDoorPlanks.description>A door that blends in with wooden walls. Put a wall link in the same tile to make it link to adjacent walls.</HiddenDoorPlanks.description>
+  <!-- EN: hidden door (rock) -->
+  <HiddenDoorRock.label>hidden door (rock)</HiddenDoorRock.label>
+  <!-- EN: A door that blends in with rock. Put a wall link in the same tile to make it link to adjacent walls. -->
+  <HiddenDoorRock.description>A door that blends in with rock. Put a wall link in the same tile to make it link to adjacent walls.</HiddenDoorRock.description>
+  <!-- EN: hidden door (smoothed rock) -->
+  <HiddenDoorRocksmooth.label>hidden door (smoothed rock)</HiddenDoorRocksmooth.label>
+  <!-- EN: A door that blends in with smoothed rock. Put a wall link in the same tile to make it link to adjacent walls. -->
+  <HiddenDoorRocksmooth.description>A door that blends in with smoothed rock. Put a wall link in the same tile to make it link to adjacent walls.</HiddenDoorRocksmooth.description>
+  <!-- EN: hidden door (metallic) -->
+  <HiddenDoorSmooth.label>hidden door (metallic)</HiddenDoorSmooth.label>
+  <!-- EN: A door that blends in with smooth walls. Put a wall link in the same tile to make it link to adjacent walls. -->
+  <HiddenDoorSmooth.description>A door that blends in with smooth walls. Put a wall link in the same tile to make it link to adjacent walls.</HiddenDoorSmooth.description>
+  <!-- EN: wall link -->
+  <WallLink.label>wall link</WallLink.label>
+  <!-- EN: Place in the same tile as a secret passage door to make walls link to it. -->
+  <WallLink.description>Place in the same tile as a secret passage door to make walls link to it.</WallLink.description>
+</LanguageData>

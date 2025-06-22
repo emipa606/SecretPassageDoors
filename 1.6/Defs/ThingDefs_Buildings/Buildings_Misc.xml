@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="DoorBaseWithoutMaterials" Abstract="True">
+    <thingClass>Building_Door</thingClass>
+    <category>Building</category>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+      <isInert>true</isInert>
+      <paintable>true</paintable>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/Door_Blueprint</texPath>
+      </blueprintGraphicData>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+    </placeWorkers>
+  </ThingDef>
+  <ThingDef ParentName="DoorBaseWithoutMaterials" Name="HiddenDoorSmooth">
+    <defName>HiddenDoorSmooth</defName>
+    <label>hidden door (metallic)</label>
+    <description>A door that blends in with smooth walls. Put a wall link in the same tile to make it link to adjacent walls.</description>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Linked/SecretPassageSmooth_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/SecretPassageSmooth_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <rotatable>false</rotatable>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+  </ThingDef>
+  <ThingDef ParentName="HiddenDoorSmooth">
+    <defName>HiddenAutoDoorSmooth</defName>
+    <label>hidden autodoor (metallic)</label>
+    <description>An autodoor that blends in with smooth walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <uiIconPath>Things/Building/Linked/SecretAutoPassageSmooth_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Styleable" />
+    </comps>
+    <researchPrerequisites>
+      <li>Autodoors</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="DoorBaseWithoutMaterials" Name="HiddenDoorBricks">
+    <defName>HiddenDoorBricks</defName>
+    <label>hidden door (bricks)</label>
+    <description>A door that blends in with brick walls. Put a wall link in the same tile to make it link to adjacent walls.</description>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Linked/SecretPassageBricks_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/SecretPassageBricks_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <rotatable>false</rotatable>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+  <ThingDef ParentName="HiddenDoorBricks">
+    <defName>HiddenAutoDoorBricks</defName>
+    <label>hidden autodoor (bricks)</label>
+    <description>An autodoor that blends in with brick walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <uiIconPath>Things/Building/Linked/SecretAutoPassageBricks_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Styleable" />
+    </comps>
+    <researchPrerequisites>
+      <li>Autodoors</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="DoorBaseWithoutMaterials" Name="HiddenDoorPlanks">
+    <defName>HiddenDoorPlanks</defName>
+    <label>hidden door (planks)</label>
+    <description>A door that blends in with wooden walls. Put a wall link in the same tile to make it link to adjacent walls.</description>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Linked/SecretPassagePlanks_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/SecretPassagePlanks_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <rotatable>false</rotatable>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+  </ThingDef>
+  <ThingDef ParentName="HiddenDoorPlanks">
+    <defName>HiddenAutoDoorPlanks</defName>
+    <label>hidden autodoor (planks)</label>
+    <description>An autodoor that blends in with plank walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <uiIconPath>Things/Building/Linked/SecretAutoPassagePlanks_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Styleable" />
+    </comps>
+    <researchPrerequisites>
+      <li>Autodoors</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="DoorBaseWithoutMaterials" Name="HiddenDoorRock">
+    <defName>HiddenDoorRock</defName>
+    <label>hidden door (rock)</label>
+    <description>A door that blends in with rock. Put a wall link in the same tile to make it link to adjacent walls.</description>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Linked/SecretPassageRock_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/SecretPassageRock_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <rotatable>false</rotatable>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+  <ThingDef ParentName="HiddenDoorRock">
+    <defName>HiddenAutoDoorRock</defName>
+    <label>hidden autodoor (rock)</label>
+    <description>An autodoor that blends in with rock walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <uiIconPath>Things/Building/Linked/SecretAutoPassageRock_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Styleable" />
+    </comps>
+    <researchPrerequisites>
+      <li>Autodoors</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="DoorBaseWithoutMaterials" Name="HiddenDoorRocksmooth">
+    <defName>HiddenDoorRocksmooth</defName>
+    <label>hidden door (smoothed rock)</label>
+    <description>A door that blends in with smoothed rock. Put a wall link in the same tile to make it link to adjacent walls.</description>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Linked/SecretPassageRockSmooth_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/SecretPassageRockSmooth_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <rotatable>false</rotatable>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+  <ThingDef ParentName="HiddenDoorRocksmooth">
+    <defName>HiddenAutoDoorRocksmooth</defName>
+    <label>hidden autodoor (rock smoothed)</label>
+    <description>An autodoor that blends in with smoothed rock walls. Put a wall link in the same tile to make it link to adjacent walls. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <uiIconPath>Things/Building/Linked/SecretAutoPassageRockSmooth_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Styleable" />
+    </comps>
+    <researchPrerequisites>
+      <li>Autodoors</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase" Name="WallLink">
+    <defName>WallLink</defName>
+    <label>wall link</label>
+    <description>Place in the same tile as a secret passage door to make walls link to it.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Linked/AlmostBlank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/WallLink_MenuIcon</uiIconPath>
+    <building>
+      <paintable>true</paintable>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <designationCategory>Structure</designationCategory>
+    <clearBuildingArea>false</clearBuildingArea>
+  </ThingDef>
+</Defs>
