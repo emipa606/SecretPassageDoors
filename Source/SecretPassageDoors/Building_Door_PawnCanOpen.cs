@@ -26,6 +26,6 @@ public class Building_Door_PawnCanOpen
             return;
         }
 
-        __result = p.IsColonistPlayerControlled;
+        __result = p.IsPlayerControlled;
     }
 }

@@ -1,5 +1,8 @@
 # Changelog for SecretPassageDoors
 
+1.6.2 - Should now also include colony mechs
+
+
 1.6.1 - Doors should now be airtight correctly
 
 
