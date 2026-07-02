@@ -1,5 +1,8 @@
 # Changelog for SecretPassageDoors
 
+1.6.3 - Colony animals should be able to use the doors while being roped. Should improve giddy up animals too.
+
+
 1.6.2 - Should now also include colony mechs
 
 
