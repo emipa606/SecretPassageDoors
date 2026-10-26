@@ -1,42 +1,62 @@
 # GitHub Copilot Instructions for Secret Passage Doors (Continued)
 
 ## Mod Overview and Purpose
-**Mod Name:** Secret Passage Doors (Continued)  
-**Mod Description:** This mod is a continuation of Blake's Secret Passage Doors mod, introducing hidden doors that blend seamlessly with walls for secret passages, maintenance accesses, and more. With this mod, players gain the ability to create secret passageways using doors that aesthetically match metallic, brick, wooden plank, smoothed rock, and natural rock walls.
 
-The mod has been updated to reflect changes in RimWorld 1.0 and 1.1, including updated wall graphics and changes in resource requirements for building these doors.
+Secret Passage Doors (Continued) is an update to the original Secret Passage Doors mod for RimWorld. The mod adds doors that look like and blend in with walls, for secret passages, maintenance hatches, etc. It includes a setting to only let player-controlled colonists use the doors. The mod has been updated for RimWorld 1.0 and 1.1, with new wall graphics and updated costs.
 
 ## Key Features and Systems
-- **Hidden Doors:** The mod provides doors that appear as natural parts of walls, enhancing stealth and strategic layouts.
-- **Wall Connector:** Utilized for connecting walls and placements such as vents or nutrient paste dispensers, beyond the secret door functionality.
-- **Updated Graphics:** Visual components were updated to match the aesthetics of RimWorld versions 1.0 and 1.1.
-- **Selective Access:** Configurations allow the limitation of door usage to player-controlled colonists.
+
+- **Secret Passage Doors**: The mod adds doors that look like and blend in with walls for secret passages, maintenance hatches, etc. These doors come in various materials, including metallic, brick, plank, smoothed rock, and rock surfaces.
+
+- **Wall Connector**: The wall connector can be used to connect walls to vents, nutrient paste dispensers, and other objects in addition to connecting walls and secret doors.
+
+- **Settings**: The mod includes a setting to only let player-controlled colonists use the doors.
 
 ## Coding Patterns and Conventions
-- **Naming Conventions:** Classes and methods use PascalCase, whereas variables and fields use camelCase.
-- **Project Structure:** C# code is organized within a `Source` directory, maintaining separation between XML and C# assets.
-- **DefOf Usage:** Utilizes the `DefOf` class pattern to manage mod-specific definitions efficiently.
-- **Settings Management:** Through custom settings stored and exposed using the `ExposeData` method in `SecretPassageDoorsSettings.cs`.
+
+- **Coding Style**: The code follows standard C# conventions and uses camelCase for variable and method names.
+
+- **Class Structure**: The C# files are structured into classes, each with its own responsibility. For example, `SecretPassageDoorsMod` handles the mod settings, `SecretPassageDoors` handles the mod logic, and `Building_Door_PawnCanOpen` handles the pawn-based door logic.
+
+- **XML Integration**: The mod uses XML files to define new game objects, such as doors and wall connectors. These XML files are located in the `Defs` folder of the mod.
+
+- **Harmony Patching**: The mod uses Harmony patching to modify existing game behavior. For example, the `Building_Door_PawnCanOpen` class uses a Harmony postfix patch to modify the behavior of the `Open` method for the door.
 
 ## XML Integration
-- **ThingDefs:** Defined in `Buildings_Misc.xml`. Customize door properties to match visuals and behaviors in-game.
-- **Update Information:** Managed via `UpdateInfo.xml` to ensure users are informed of mod changes.
-- **Localization:** XML files in the `TranslationTemplate` folder assist in maintaining consistent translations and mod descriptions.
+
+The mod uses XML files to define new game objects, such as doors and wall connectors. These XML files are located in the `Defs` folder of the mod and use the following conventions:
+
+- **ThingDef**: Each new game object is defined using a `ThingDef` element, which includes attributes such as `defName`, `label`, and `description`.
+
+- **StatDef**: Each new game object can have multiple `StatDef` elements, which define the object's statistics, such as its cost and build time.
+
+- **DefOf**: The `DefOf` class is used to store references to the mod's game objects. This class is generated using the `DefGenerator` class, which reads the XML files and generates the necessary code.
 
 ## Harmony Patching
-- **Harmony Integration:** This mod employs Harmony (brrainz.harmony) to patch game methods, allowing for the customization of door interactions, such as selectively enabling access.
-- **Example Patch:** Within `Building_Door_PawnCanOpen.cs`, a postfix is applied using Harmony to determine who can open doors, adding a layer of gameplay depth.
+
+The mod uses Harmony patching to modify existing game behavior. The following conventions are used for Harmony patches:
+
+- **Prefix**: A prefix patch is used to modify the behavior of a method before it is executed. Prefix patches return a boolean value that determines whether the original method should be executed.
+
+- **Postfix**: A postfix patch is used to modify the behavior of a method after it is executed. Postfix patches can modify the return value of the method or access its parameters.
+
+- **TargetMethod**: The `TargetMethod` attribute is used to specify the method that the patch should target. This attribute takes the form of a `MethodInfo` object, which can be obtained using reflection.
 
 ## Suggestions for Copilot
-1. **Automatic Patch Suggestions:** Use Copilot to suggest patches for extending access restrictions or altering specific door behaviors.
-2. **XML Definitions Assistance:** Utilize Copilot for automatic generation and validation of XML defs to prevent errors and ensure compliance with mod operation.
-3. **Refactoring Support:** Leverage Copilot's ability to recommend refactoring of complex functions to improve code readability and maintainability.
-4. **Localization and UI Enhancements:** Get Copilot's help in identifying gaps in language and UI, suggesting areas for support across different languages.
 
-By leveraging GitHub Copilot, mod developers can efficiently manage updates, maintain consistency across codebases, and enhance modular capabilities while keeping player experience central.
+Here are some suggestions for using GitHub Copilot with the Secret Passage Doors (Continued) mod:
 
+- **Use XML Templates**: Copilot can be used to generate XML templates for new game objects. For example, Copilot can generate a template for a new `ThingDef` element that includes all the necessary attributes and elements.
 
-This completes the requested GitHub Copilot instruction file. If further adjustments or specific aspects of the project need more detailed explanations, feel free to ask!
+- **Generate Harmony Patches**: Copilot can be used to generate Harmony patches for modifying existing game behavior. For example, Copilot can generate a prefix patch for a method that returns a boolean value, which can be used to modify the behavior of the method.
+
+- **Auto-complete C# Code**: Copilot can be used to auto-complete C# code for new classes and methods. For example, Copilot can generate a class that inherits from `Building_Door` and includes the necessary fields and methods.
+
+- **Generate XML Documentation**: Copilot can be used to generate XML documentation for new game objects. For example, Copilot can generate documentation for a new `ThingDef` element, which includes the object's attributes and elements.
+
+- **Code Review**: Copilot can be used to review code for errors and bugs. For example, Copilot can identify unused variables, missing semicolons, and other common mistakes.
+
+By following these conventions and suggestions, you can use GitHub Copilot to streamline your mod development process and create high-quality mods for RimWorld.
 
 ## Project Solution Guidelines
 - Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
@@ -50,4 +70,6 @@ This completes the requested GitHub Copilot instruction file. If further adjustm
 ## Hard rules (must follow)
 - Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
 - Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+- When mentioning SonarQube issues, automatically use the SonarQube MCP service to fetch and address issues instead of making inferred fixes without querying SonarQube first.
+- When mentioning the rimworld log, automatically use the Rimworld MCP service to fetch the log.
 

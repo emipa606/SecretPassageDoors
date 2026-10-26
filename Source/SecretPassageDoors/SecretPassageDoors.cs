@@ -6,7 +6,7 @@ using Verse;
 namespace SecretPassageDoors;
 
 [StaticConstructorOnStartup]
-public class SecretPassageDoors
+public static class SecretPassageDoors
 {
     public static readonly List<ThingDef> SecretPassageDoorDefs =
     [

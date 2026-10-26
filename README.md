@@ -34,4 +34,4 @@ Also, side note, the wall connector can be used for things other than connecting
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/SecretPassageDoors?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2412682633) | tags: hidden doors
+[![Image](https://img.shields.io/github/v/release/emipa606/SecretPassageDoors?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2412682633) | hidden doors

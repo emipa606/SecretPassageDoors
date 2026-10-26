@@ -1,5 +1,8 @@
 # Changelog for SecretPassageDoors
 
+1.7.0 - Mod updated for 1.7 and passed autotests
+
+
 1.6.3 - Colony animals should be able to use the doors while being roped. Should improve giddy up animals too.
 
 
